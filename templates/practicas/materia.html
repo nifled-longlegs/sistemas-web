@@ -5,7 +5,9 @@
 <h3>Practicas</h3>
 <ul>
   {% for practica in materia.practicas.all %}
-    <li>{{ practica.titulo }}</li>
+    <li>
+        <a href="{% url 'practica-detail' practica.id %}">{{ practica.titulo }}</a>
+    </li>
   {% endfor %}
 </ul>
 

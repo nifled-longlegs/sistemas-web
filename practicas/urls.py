@@ -9,9 +9,6 @@ urlpatterns = [
     # ex: /materia/5/
     path('materia/<int:materia_id>/', views.materia_detail, name='materia-detail'),
 
-
-    # # ex: /polls/5/results/
-    # path('<int:question_id>/results/', views.results, name='results'),
-    # # ex: /polls/5/vote/
-    # path('<int:question_id>/vote/', views.vote, name='vote'),
+    # ex: /practica/5/
+    path('practica/<int:practica_id>/', views.practica_detail, name='practica-detail'),
 ]
