@@ -38,7 +38,7 @@ class Alumno(models.Model):
   materia = models.ForeignKey(Materia, on_delete=models.CASCADE)
 
   def __str__(self):
-    return self.name
+    return self.nombre
 
 
 class PracticaAlumno(models.Model):
@@ -52,4 +52,4 @@ class PracticaAlumno(models.Model):
     verbose_name_plural = 'Practicas de Alumnos'
 
   def __str__(self):
-    return f'{self.practica.titulo} - {self.alumno.name}'
+    return f'{self.practica.titulo} - {self.alumno.name} - Materia: {self.practica.materia.name}'
