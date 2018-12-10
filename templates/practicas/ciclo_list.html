@@ -1,11 +1,12 @@
 {% for ciclo in ciclos %}
 
   <h1>{{ ciclo.nombre }}</h1>
-  <h6>------------------</h6>
-
-  {% for materia in ciclo.materias.all %}
-    <h3>{{ materia.nombre }}</h3>
-    <h3>{{ materia.maestro }}</h3>
-  {% endfor %}
+  <ul>
+    {% for materia in ciclo.materias.all %}
+      <li>
+        <a href="{% url 'materia-detail' materia.id %}">{{ materia.nombre }}</a>
+      </li>
+    {% endfor %}
+  </ul>
 
 {% endfor %}

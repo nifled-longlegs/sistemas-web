@@ -1,0 +1,11 @@
+
+<h1>Materia: {{ materia.nombre }}</h1>
+<h1>Maestro: {{ materia.maestro }}</h1>
+
+<h3>Practicas</h3>
+<ul>
+  {% for practica in materia.practicas.all %}
+    <li>{{ practica.titulo }}</li>
+  {% endfor %}
+</ul>
+
