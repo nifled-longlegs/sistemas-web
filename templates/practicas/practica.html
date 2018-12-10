@@ -1,7 +1,14 @@
 
+<style>
+  .doc {
+      width: 100%;
+      height: 800px;
+  }
+</style>
+
 <h1>Practica: {{ practica.titulo }}</h1>
 <p>{{ practica.descripcion }}</p>
 
 <p># de Practica: {{ practica.numero_practica }}</p>
 
-<iframe src="https://docs.google.com/gview?url={{ practica.archivo.url }}&embedded=true"></iframe>
+<iframe class="doc" src="https://docs.google.com/gview?url={{ practica.archivo.url }}&embedded=true"></iframe>
