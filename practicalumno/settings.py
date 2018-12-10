@@ -28,9 +28,9 @@ SECRET_KEY = "t@msz6kogc8$kbyuaf$u%ztonq%g$(+$-hq7j^kw1kwul2$3p("
 DEBUG = True
 
 # AZURE STORAGE
-AZURE_ACCOUNT_NAME = 'sandboxdiag449'
-AZURE_ACCOUNT_KEY = 'S5m+DUpwFcRC4GqOEc8GyL+HX7vIFIypiqWST8lsPQRWY8xyCYS4Yd5MrUJtffyIXUleTTt/j2T/MmiUQa7vjA=='
-AZURE_CONTAINER = 'prac'
+AZURE_ACCOUNT_NAME = ''
+AZURE_ACCOUNT_KEY = ''
+AZURE_CONTAINER = ''
 DEFAULT_FILE_STORAGE = 'storages.backends.azure_storage.AzureStorage'
 STATICFILES_STORAGE = 'storages.backends.azure_storage.AzureStorage'
 
