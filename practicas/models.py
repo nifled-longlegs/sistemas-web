@@ -14,7 +14,7 @@ class Materia(models.Model):
   ciclo = models.ForeignKey(Ciclo, on_delete=models.CASCADE, related_name='materias')
 
   def __str__(self):
-    return self.nombre
+    return f'{self.nombre} - {self.ciclo.nombre}'
 
 
 class Practica(models.Model):
