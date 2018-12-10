@@ -35,9 +35,6 @@ DEFAULT_FILE_STORAGE = 'storages.backends.azure_storage.AzureStorage'
 STATICFILES_STORAGE = 'storages.backends.azure_storage.AzureStorage'
 
 
-ADMIN_SITE_HEADER = "Practicas Alumnos Admin"
-
-
 # Application definition
 
 INSTALLED_APPS = [
