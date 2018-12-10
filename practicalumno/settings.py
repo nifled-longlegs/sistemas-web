@@ -30,7 +30,7 @@ DEBUG = True
 # AZURE STORAGE
 AZURE_ACCOUNT_NAME = 'sandboxdiag449'
 AZURE_ACCOUNT_KEY = 'S5m+DUpwFcRC4GqOEc8GyL+HX7vIFIypiqWST8lsPQRWY8xyCYS4Yd5MrUJtffyIXUleTTt/j2T/MmiUQa7vjA=='
-AZURE_CONTAINER = 'practicas'
+AZURE_CONTAINER = 'prac'
 DEFAULT_FILE_STORAGE = 'storages.backends.azure_storage.AzureStorage'
 STATICFILES_STORAGE = 'storages.backends.azure_storage.AzureStorage'
 
